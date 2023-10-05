@@ -113,11 +113,11 @@ form.addEventListener("submit", (e) => {
   const validator = (elementInput, validation) => {
     if (validation()) {
         elementInput.closest('label').className = 'valid';
-        elementInput.nextElementSibling.style.display= "none";
+        elementInput.nextElementSibling.style.display = "none";
       } else {
         e.preventDefault();
-        elementInput.closest('label').className= 'not-valid'
-        elementInput.nextElementSibling.style.display= 'block';
+        elementInput.closest('label').className = 'not-valid'
+        elementInput.nextElementSibling.style.display = 'block';
     }
 };
 
