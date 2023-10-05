@@ -111,7 +111,7 @@ const isValidName = () => nameField.value !== "";
 form.addEventListener("submit", (e) => {
   // Function to validate text field inputs.
   const validator = (elementInput, validation) => {
-    if(validation()){
+    if (validation()){
         elementInput.closest('label').className = 'valid';
         elementInput.nextElementSibling.style.display= "none";
       } else {
@@ -122,7 +122,7 @@ form.addEventListener("submit", (e) => {
 };
 
 // Validates zip code, CVV, and credit card number text fields only if the credit card payment option is selected.
-  if(paymentMenu.value === "credit-card") {
+  if (paymentMenu.value === "credit-card") {
     validator(zipCodeField, isValidZipCode);
     validator(cvvField, isValidCVV);
     validator(creditCardNumberField, isValidCreditCardNum);
