@@ -111,7 +111,7 @@ const isValidName = () => nameField.value !== "";
 form.addEventListener("submit", (e) => {
   // Function to validate text field inputs.
   const validator = (elementInput, validation) => {
-    if (validation()){
+    if (validation()) {
         elementInput.closest('label').className = 'valid';
         elementInput.nextElementSibling.style.display= "none";
       } else {
